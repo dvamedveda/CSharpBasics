@@ -9,6 +9,7 @@ namespace HelloWorld
             int x = 50;
             int y = 25;
             int z = x - y;
+            Console.WriteLine("Program output:");
             Console.WriteLine("X is: " + x);
             Console.WriteLine("Y is: " + y);
             Console.WriteLine("Z is: " + z);
