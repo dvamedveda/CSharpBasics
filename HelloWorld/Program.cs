@@ -6,13 +6,12 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            int x = 50;
-            int y = 25;
-            int z = x - y;
-            Console.WriteLine("Program output:");
-            Console.WriteLine("X is: " + x);
-            Console.WriteLine("Y is: " + y);
-            Console.WriteLine("Z is: " + z);
+            Console.WriteLine("This is a multiplicator program.");
+            Console.WriteLine("Enter number:");
+            string input = Console.ReadLine();
+            int number = Convert.ToInt32(input);
+            Console.WriteLine("Number is: " + number.ToString());
+            Console.WriteLine("Multiplied number is: " + (number * number).ToString());
             Console.ReadKey();
         }
     }
