@@ -10,21 +10,22 @@ namespace HelloWorld
             Console.WriteLine("Enter number:");
             string input = Console.ReadLine();
 
-            switch (input)
+            Console.WriteLine("Checking input for null, replacing to 1 if is null");
+            input = input ?? "1";
+
+            Console.WriteLine("Checking input for space or empty string, replacing to 1, if true");
+            input = input == " " || input == "" ? "1" : input;
+
+            int number;
+            Console.WriteLine("Checking for numerical");
+            if (!int.TryParse(input, out number))
             {
-                case "":
-                    Console.WriteLine("This is a empty string.");
-                    break;
-                case " ":
-                    goto case "";
-                    break;
-                default:
-                    Console.WriteLine("We checked string for emptyness success");
-                    Console.WriteLine("Going on.");
-                    break;
+                Console.WriteLine("It is not a number, replacing to 1");
+                number = 1;
+                
             }
 
-            int number = Convert.ToInt32(input);
+            number = Convert.ToInt32(input);
             Console.WriteLine("Number is: " + number.ToString());
             Console.WriteLine("Multiplied number is: " + (number * number).ToString());
             if (number % 2 == 0)
