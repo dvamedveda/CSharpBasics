@@ -9,6 +9,21 @@ namespace HelloWorld
             Console.WriteLine("This is a multiplicator program.");
             Console.WriteLine("Enter number:");
             string input = Console.ReadLine();
+
+            switch (input)
+            {
+                case "":
+                    Console.WriteLine("This is a empty string.");
+                    break;
+                case " ":
+                    goto case "";
+                    break;
+                default:
+                    Console.WriteLine("We checked string for emptyness success");
+                    Console.WriteLine("Going on.");
+                    break;
+            }
+
             int number = Convert.ToInt32(input);
             Console.WriteLine("Number is: " + number.ToString());
             Console.WriteLine("Multiplied number is: " + (number * number).ToString());
