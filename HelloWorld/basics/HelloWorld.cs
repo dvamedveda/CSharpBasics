@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace HelloWorld
+namespace HelloWorld.basics
 {
-    internal class Program
+    internal class HelloWorld
     {
         static void Main(string[] args)
         {
@@ -22,7 +22,7 @@ namespace HelloWorld
             {
                 Console.WriteLine("It is not a number, replacing to 1");
                 number = 1;
-                
+
             }
 
             number = Convert.ToInt32(input);
