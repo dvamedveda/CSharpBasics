@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace HelloWorld.basics
+namespace BaseOperators
 {
-    internal class HelloWorld
+    internal class Program
     {
         static void Main(string[] args)
         {
@@ -22,10 +22,12 @@ namespace HelloWorld.basics
             {
                 Console.WriteLine("It is not a number, replacing to 1");
                 number = 1;
-
+            } else
+            {
+                number = Convert.ToInt32(input);
             }
 
-            number = Convert.ToInt32(input);
+            
             Console.WriteLine("Number is: " + number.ToString());
             Console.WriteLine("Multiplied number is: " + (number * number).ToString());
             if (number % 2 == 0)
