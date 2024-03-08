@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FizzBuzz", "FizzBuzz\FizzBu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayFiller", "ArrayFiller\ArrayFiller.csproj", "{AD07E4C3-DC41-4014-B0B6-712B50458756}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore", "BookStore\BookStore.csproj", "{0E61E8B3-260C-475B-AABF-655C0E2219DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore", "BookStore\BookStore.csproj", "{0E61E8B3-260C-475B-AABF-655C0E2219DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlPost", "ControlPost\ControlPost.csproj", "{B71E676C-1EBB-4BD4-A651-4B0CD4FDC15E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{0E61E8B3-260C-475B-AABF-655C0E2219DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E61E8B3-260C-475B-AABF-655C0E2219DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E61E8B3-260C-475B-AABF-655C0E2219DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B71E676C-1EBB-4BD4-A651-4B0CD4FDC15E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B71E676C-1EBB-4BD4-A651-4B0CD4FDC15E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B71E676C-1EBB-4BD4-A651-4B0CD4FDC15E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B71E676C-1EBB-4BD4-A651-4B0CD4FDC15E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
